@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>lavender Nova Portfolio</title>
 <link rel="icon" href="favicon.png" type="image/png">
@@ -10,32 +10,13 @@
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
-
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/font-mfizz.css" rel="stylesheet" >
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<!-- Framework Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- Icon Font Fontawesome -->
+<link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/font-mfizz.css" rel="stylesheet" type="text/css"> -->
 <link href="css/animate.css" rel="stylesheet" type="text/css">
-
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
-
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
-
-
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-
-
+<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div style="overflow:hidden;">
@@ -44,141 +25,254 @@
     	<figure class="logo animated fadeInDown delay-07s">
         	<a href="#"><img src="img/logo.png" alt=""></a>	
         </figure>	
-        <h1 class="animated fadeInDown delay-07s">Welcome To My Portfolio Of Work</h1>
-        <ul class="we-create animated fadeInUp delay-1s">
-        	<li>Know my work and get carried away by the sensations they produce at all.</li>
-        </ul>
-            <a class="link animated fadeInUp delay-1s" href="#Portfolio">Get Started</a>
+        <h1 class="animated fadeInDown delay-07s">Welcome To<br><span class="font-weight-bold">My Portfolio Of Work</span></h1>
+            <a class="link animated fadeInUp delay-1s mb-4" href="#Portfolio">Get Started</a>
     </div>
 </div>
 </header><!--header-end-->
-
-
-<nav class="main-nav-outer" id="test"><!--main-nav-start-->
-	<div class="container">
-        <ul class="main-nav">
-        	<!-- <li><a href="#header">Home</a></li> -->
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#service">About</a></li>
-            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
-            <li><a href="#client">Clients</a></li>
-            <!-- <li><a href="#team">Team</a></li> -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top main-nav-outer" id="test">
+    <div class="container">
+        <div class="menu-center">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto align-items-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Portfolio">Portfolio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#About">About Us</a>
+      </li>
+      <li class="small-logo">
+        <a class="navbar-brand" href="#header"><img src="img/small-logo.png" alt=""></a>
+    </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#Skills">Skills</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  </div>
 </nav><!--main-nav-end-->
-
-
-<section class="main-section paddind" id="Portfolio"><!--main-section-start-->
-	<div class="container">
-    	<h2>Portfolio</h2>
-    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
+<section id="Portfolio" class="portfolio-two-wrapper pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+        <h2>Portfolio</h2>
+        <h6>Fresh portfolio of designs that will keep you wanting more.</h6>
       <div class="portfolioFilter">  
         <ul class="Portfolio-nav wow fadeIn delay-02s">
-        	<li><a href="#" data-filter="*" class="current" >All</a></li>
-            <li><a href="#" data-filter=".branding" >Branding</a></li>
+            <li><a href="#" data-filter="*" class="current" >All</a></li>
             <li><a href="#" data-filter=".webdesign" >Web design</a></li>
-            <li><a href="#" data-filter=".printdesign" >Print design</a></li>
-            <li><a href="#" data-filter=".Illustration" >Illustration</a></li>
+            <!-- <li><a href="#" data-filter=".branding" >Branding</a></li> -->
+            <li><a href="#" data-filter=".development" >Web Development</a></li>
+            <!-- <li><a href="#" data-filter=".Illustration" >Illustration</a></li> -->
         </ul>
+        </div>
        </div> 
-        
-	</div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-            	<div class=" Portfolio-box webdesign printdesign">
-                	<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/housegroup-preview.jpg" alt=""></a>	
-                	<h3>Foto Album</h3>
-                    <p>Print Design</p>
-                </div>
-
-                <div class="Portfolio-box webdesign">
-                	<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/summerhotel-preview.jpg" alt=""></a>	
-                	<h3>Luca Theme</h3>
-                    <p>Web Design</p>
-                </div>
-                <div class=" Portfolio-box webdesign branding">
-                	<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/arismendyandrade-preview.jpg" alt=""></a>	
-                	<h3>Uni Sans</h3>
-                    <p>Branding</p>
-                </div>
-                <div class=" Portfolio-box webdesign Illustration" >
-                	<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/jaimeorduzduran-preview.jpg" alt=""></a>	
-                	<h3>Vinyl Record</h3>
-                    <p>Illustration</p>
-                </div>
-                <div class=" Portfolio-box branding">
-                	<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/ashoget-preview.jpg" alt=""></a>	
-                	<h3>Hipster</h3>
-                    <p>Branding</p>
-                </div>
-                <div class=" Portfolio-box Illustration">
-                	<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/escenario-indias-preview.jpg" alt=""></a>	
-                	<h3>Windmills</h3>
-                    <p>Illustration</p>
-                </div>
-                <div class=" Portfolio-box Illustration">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/agua-preview.jpg" alt=""></a> 
-                    <h3>Windmills</h3>
-                    <p>Illustration</p>
-                </div>
-                <div class=" Portfolio-box Illustration">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/lecoqtail-preview.jpg" alt=""></a> 
-                    <h3>Windmills</h3>
-                    <p>Illustration</p>
-                </div>
-                <div class=" Portfolio-box Illustration">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal"><img src="img/portfolio/kitesurf-preview.jpg" alt=""></a> 
-                    <h3>Windmills</h3>
-                    <p>Illustration</p>
-                </div>
+        </div>
     </div>
-</section><!--main-section-end-->
+        <div class="container wow fadeInUp delay-04s">
+            <div class="portfolio-item-wrapper style-two">
 
+                <a href="#portfolioModal1" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b2.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Stats</h3>
+                            <h6>DESIGN UX AND UI</h6>
+                        </div>
+                    </div>
+                </a>
 
-<section class="main-section" id="service"><!--main-section-start-->
-    <div class="container">
-        <h2>Let's talk about it</h2>
-        <h6>We meet a man some features of this strange designer.</h6>
-        <div class="row">
-            <div class="col-lg-8 col-sm-6 wow fadeInLeft delay-05s">
-                <div class="service-list">
+                <a href="#portfolioModal2" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b1.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Scoutz App</h3>
+                            <h6>DESIGN UX AND UI</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal3" data-toggle="modal" class="single-portfolio-2 webdesign development">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b3.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>El Indio</h3>
+                            <h6>WEB DESIGN AND DEVELOPMENT</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal4" data-toggle="modal" class="single-portfolio-2  webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b4.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Ark Exit Companies</h3>
+                            <h6>WEB DESIGN</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal5" data-toggle="modal" class="single-portfolio-2 webdesign development">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b5.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Zambaí Snack</h3>
+                            <h6>WEB DESIGN AND DEVELOPMENT</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal6" data-toggle="modal" class="single-portfolio-2 development">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b6.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Vital RX</h3>
+                            <h6>WEB DEVELOPMENT</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal7" data-toggle="modal" class="single-portfolio-2 development">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b7.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>MMJ</h3>
+                            <h6>WEB DEVELOPMENT</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal8" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b8.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>lavhealth</h3>
+                            <h6>PROTOTYPE</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal9" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b9.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>OWD Health Care</h3>
+                            <h6>PROTOTYPE</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <!--<a href="#portfolioModal10" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b10.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>blue glass</h3>
+                            <h6>ILLUSTRATION</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal11" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b11.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>red oxygan</h3>
+                            <h6>ILLUSTRATION</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal12" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b12.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>guiter sound</h3>
+                            <h6>ILLUSTRATION</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal13" data-toggle="modal" class="single-portfolio-2 webdesign branding">
+                   <div class="single-inner">
+                        <img src="img/portfolio/b13.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Cartoon Maniå</h3>
+                            <h6>design</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal14" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b14.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Cartoon Maniå</h3>
+                            <h6>ILLUSTRATION</h6>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#portfolioModal15" data-toggle="modal" class="single-portfolio-2 webdesign">
+                    <div class="single-inner">
+                        <img src="img/portfolio/b15.jpg" alt="">
+                        <div class="portfolio-hover-2">
+                            <h3>Cartoon Maniå</h3>
+                            <h6>web design</h6>
+                        </div>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+    </section>
+<!-- About Two Start -->
+<section id="About" class="about-section-style-2 pt-6 pt-md-0">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-7 pr-5 wow fadeInLeft delay-05s">
+            <!-- Heading -->
+            <h2 class="about-section__title">
+              Let's talk about it
+            </h2>
+            <h6 class="text-left">We meet a man some features of this strange designer.</h6>
+             <!-- Text -->
+            <div class="service-list">
                     <div class="service-list-col1">
                         <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="service-list-col2">
-                        <h3>where does he live?</h3>
-                        <p>Recidente in Cartagena-Colombia.
-                            Graphic Designer, Frontend Developer and Illustrator.</p>
+                        <h3 class="about-section__subtitle">where does he live?</h3>
+                        <p>Recidente in Cartagena - Colombia.</p>
                     </div>
                 </div>
-                <div class="service-list">
+               <!--  <div class="service-list">
                     <div class="service-list-col1">
                        <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="service-list-col2">
-                        <h3>where did he study?</h3>
-                        <p>Graduated in 2007 from the School of Fine Arts in Cartagena de Indias.
-                            with an experience of 9 years in different areas of design as:
-                            Project Director, creative, print designer, illustrator and
+                        <h3 class="about-section__subtitle">where did he study?</h3>
+                        <p>Graduated in 2007 from the School of Fine Arts in Cartagena de Indias,
+                            with an experience of 13 years in different areas of design as:
+                            Creative, print designer, illustrator and
                             even frontend web developer and designer and I think that makes clear
                             the versatility of speaking in the third person.</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="service-list">
                     <div class="service-list-col1">
                         <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="service-list-col2">
-                        <h3>what are your tastes?</h3>
-                        <p>He has always liked everything related to the image,
-                            so I started to design and illustrate a very early age,
-                            feel much satisfaction by small but no less
-                            important details when performing any kind of work.</p>
+                        <h3 class="about-section__subtitle">what are your tastes?</h3>
+                        <p>He has always liked everything related to the image, so I started to design and illustrate a very early age, feel much satisfaction by small but no less important details when performing any kind of work.</p>
                             <br>
-                            He likes develop collaborative approaches
-                            with customers, created the enabling environment for
-                            foster a productive partnership.
+                            He likes develop collaborative approaches with customers, created the enabling environment for foster a productive partnership.
                     </div>
                 </div>
                 <div class="service-list">
@@ -186,32 +280,34 @@
                         <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="service-list-col2">
-                        <h3>conclusion</h3>
-                        <p>Resulting in intelligent, efficient, clear experiences,
-                            beautiful and useful.</p>
+                        <h3 class="about-section__subtitle">conclusion</h3>
+                        <p>Resulting in intelligent, efficient, clear experiences, beautiful and useful.</p>
                     </div>
                 </div>
+          </div>
+          <div class="col-12 col-md-5 wow fadeInUp delay-02s">
+            <!-- Image -->
+            <div class="about-section-img">
             </div>
-            <figure class="col-lg-4 col-sm-6  text-right wow fadeInUp delay-02s">
-                <img src="img/macbook-pro.png" alt="">
-            </figure>
-        
-        </div>
-    </div>
-</section><!--main-section-end-->
-
-
-
-<section class="main-section alabaster"><!--main-section alabaster-start-->
-    <div class="container">
-        <div class="row">
-            <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                <img  src="img/imac-ipad-iphone.png" alt="">
-            </figure>
-            <div class="col-lg-7 col-sm-8 featured-work">
-                <h2>services and skills</h2>
-                <P class="padding-b">Continue meeting and talking some skills and services that has this great designer who are so varied that just be impressed and hire you fancied.</P>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section><!-- About Two End -->    
+<!-- About Two Start -->
+<section class="service-section py-6">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-5 wow fadeInLeft">
+            <!-- Image -->
+            <div class="service-section-img">
+            </div>
+          </div>
+        <div class="col-12 col-md-7 featured-work">
+            <!-- Heading -->
+            <h2>services and skills</h2>
+                <P class="pb-4">Continue meeting and talking some skills and services that has this great designer who are so varied that just be impressed and hire you fancied.</P>
                 <div class="col-lg-12">
+                    <div class="row no-gutters">
                 <div class="featured-box col-lg-6">
                     <div class="featured-box-col1 wow fadeInRight delay-02s">
                         <i class="fa fa-desktop" aria-hidden="true"></i>
@@ -232,14 +328,16 @@
                     </div>    
                 </div>
                 </div>
+                </div>
                 <div class="col-lg-12">
+                    <div class="row no-gutters">
                 <div class="featured-box col-lg-6">
                     <div class="featured-box-col1 wow fadeInRight delay-06s">
                         <i class="fa fa-bolt" aria-hidden="true"></i>
                     </div>  
                     <div class="featured-box-col2 wow fadeInRight delay-06s">
                         <h3>web optimization</h3>
-                        <p>Since his work on the web is to manage the image is responsible for optimizing both code and page images.</p>
+                        <p>Since his work on the web is to manage the image is responsible for optimizing both code and page img.</p>
                     </div>    
                 </div>
                 <div class="featured-box col-lg-6">
@@ -252,51 +350,49 @@
                     </div>    
                 </div>
                 </div>
+            </div>
                  <div class="col-lg-12">
+                    <div class="row no-gutters">
                 <div class="featured-box col-lg-6">
-                    <div class="featured-box-col1 wow fadeInRight delay-06s">
+                    <div class="featured-box-col1 wow fadeInRight delay-09s">
                         <i class="fa fa-tint" aria-hidden="true"></i>
                     </div>  
-                    <div class="featured-box-col2 wow fadeInRight delay-06s">
+                    <div class="featured-box-col2 wow fadeInRight delay-09s">
                         <h3>Design printed</h3>
                         <p>Elaboration of different pieces to be printed.
-                        <br>
-                        These parts can be: <b>Brochure, flyers, business cards, posters, banners, books and magazine.</b>                        
+                        <br>These parts can be: <b>Brochure, flyers, business cards, posters, banners, books and magazine.</b></p>                        
                     </div>    
                 </div>
                 <div class="featured-box col-lg-6">
-                    <div class="featured-box-col1 wow fadeInRight delay-08s">
+                    <div class="featured-box-col1 wow fadeInRight delay-12s">
                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                         </div>  
-                    <div class="featured-box-col2 wow fadeInRight delay-08s">
+                    <div class="featured-box-col2 wow fadeInRight delay-12s">
                         <h3>Illustrator</h3>
                         <p>Graphic artist and self-taught illustrator whose work ranges from <b> character design, historyboard and comics</b>.</p>
-                        </div>    
+                    </div>    
                 </div>
                 </div>
-                <a class="Learn-More" href="#">Learn More</a>
-            </div>
-        </div>
-    </div>
-</section><!--main-section alabaster-end-->
+                </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section><!-- About Two End -->   
 
-<section class="main-section"><!--main-section-start-->
+<section id="Skills" class="skills-section py-6"><!--main-section-start-->
     <div class="container">
         <h2>better skills</h2>
         <h6>We meet a man some features of this strange designer.</h6>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-4 col-sm-4 wow fadeInLeft delay-05s">
-
-
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
-                        <i class="icon-adobe icon-adobe-ps">Ps</i>
+                        <i class="">Ps</i>
                     </div>
                     <div class="service-list-col2">
                         <h3>Photoshop</h3>
-                        
-                    <div class="progress progress-striped">
-                      <div class="progress-bar progress-bar" role="progressbar"
+                    <div class="progress">
+                      <div class="bg-blueph progress-bar-striped progress-bar-animated" role="progressbar"
                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                            style="width: 85%">
                         <span class="sr-only">85% completado (aviso)</span>
@@ -306,13 +402,13 @@
                 </div>
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
-                       <i class="icon-adobe icon-adobe-ai">Ai</i>
+                       <i class="">Ai</i>
                     </div>
                     <div class="service-list-col2">
                         <h3>Illustrator</h3>
                         
-                        <div class="progress progress-striped">
-                          <div class="progress-bar progress-bar-warning" role="progressbar"
+                        <div class="progress">
+                          <div class="bg-orangedark progress-bar-striped progress-bar-animated" role="progressbar"
                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                style="width: 90%">
                             <span class="sr-only">90% completado (aviso)</span>
@@ -322,35 +418,18 @@
                 </div>
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
-                        <i class="icon-adobe icon-adobe-an">An</i>
+                       <i class="">Xd</i>
                     </div>
                     <div class="service-list-col2">
-                        <h3>Animate</h3>
+                        <h3>Adobe XD</h3>
                         
-                        <div class="progress progress-striped">
-                          <div class="progress-bar progress-bar-danger" role="progressbar"
-                               aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                               style="width: 60%">
-                            <span class="sr-only">60% completado (aviso)</span>
+                        <div class="progress">
+                          <div class="bg-violet progress-bar-striped progress-bar-animated" role="progressbar"
+                               aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                               style="width: 90%">
+                            <span class="sr-only">90% completado (aviso)</span>
                           </div>
                         </div>
-                    
-                    </div>
-                </div>
-                <div class="service-list nuevo-service-list">
-                    <div class="service-list-col1">
-                        <i class="fa fa-joomla fa-2x" aria-hidden="true"></i>
-                    </div>
-                    <div class="service-list-col2">
-                        <h3>Joomla</h3>
-                       
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar"
-                                   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                   style="width: 70%">
-                                <span class="sr-only">70% completado (aviso)</span>
-                              </div>
-                            </div>
                     </div>
                 </div>
                  <div class="service-list nuevo-service-list">
@@ -360,19 +439,16 @@
                     <div class="service-list-col2">
                         <h3>Wordpress</h3>
                         
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-info" role="progressbar"
-                                   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                   style="width: 80%">
-                                <span class="sr-only">80% completado (aviso)</span>
+                            <div class="progress">
+                              <div class="bg-darkblue progress-bar-striped progress-bar-animated progress__bar--animation" role="progressbar"
+                                   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <span class="sr-only">60% completado (aviso)</span>
                               </div>
                             </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-4 wow fadeInLeft delay-05s">
-
-
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
                         <i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
@@ -380,8 +456,8 @@
                     <div class="service-list-col2">
                         <h3>HTML 5</h3>
                         
-                    <div class="progress progress-striped">
-                      <div class="progress-bar progress-bar-danger" role="progressbar"
+                    <div class="progress">
+                      <div class="bg-html5 progress-bar-striped progress-bar-animated" role="progressbar"
                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                            style="width: 70%">
                         <span class="sr-only">70% completado (aviso)</span>
@@ -396,8 +472,8 @@
                     <div class="service-list-col2">
                         <h3>Css</h3>
                        
-                        <div class="progress progress-striped">
-                          <div class="progress-bar progress-bar-info" role="progressbar"
+                        <div class="progress">
+                          <div class="bg-primary progress-bar-striped progress-bar-animated" role="progressbar"
                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                style="width: 80%">
                             <span class="sr-only">80% completado (aviso)</span>
@@ -407,15 +483,15 @@
                 </div>
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
-                        <i class="icon-javascript-alt fa-2x"></i>
+                        <i class="fab fa-js-square fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="service-list-col2">
                         <h3>Javascript</h3>
                        
-                        <div class="progress progress-striped">
-                          <div class="progress-bar progress-bar-warning" role="progressbar"
-                               aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                               style="width: 65%">
+                        <div class="progress">
+                          <div class="bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+                               aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                               style="width: 30%">
                             <span class="sr-only">65% completado (aviso)</span>
                           </div>
                         </div>
@@ -424,178 +500,72 @@
                 </div>
                 <div class="service-list nuevo-service-list">
                     <div class="service-list-col1">
-                        <i class="icon-adobe icon-adobe-b">B</i>
+                       <i class="fab fa-bootstrap fa-2x"></i>
                     </div>
                     <div class="service-list-col2">
                         <h3>Bootstrap</h3>
-                       
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-info" role="progressbar"
-                                   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                   style="width: 60%">
+                            <div class="progress">
+                              <div class="bg-boot progress-bar-striped progress-bar-animated" role="progressbar"
+                                   aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                   style="width: 70%">
                                 <span class="sr-only">60% completado (aviso)</span>
-                              </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="service-list nuevo-service-list">
-                    <div class="service-list-col1">
-                        <i class="icon-adobe icon-adobe-f">F</i>
-                    </div>
-                    <div class="service-list-col2">
-                        <h3>Fundation</h3>
-                       
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar" role="progressbar"
-                                   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                   style="width: 40%">
-                                <span class="sr-only">40% completado (aviso)</span>
                               </div>
                             </div>
                     </div>
                 </div>
             </div>
             <figure class="col-lg-4 col-sm-4  text-right wow fadeInUp delay-02s">
-                <img src="img/macbook-pro.png" alt="">
+                <img src="img/skills.png" alt="">
             </figure>
         
         </div>
     </div>
 </section><!--main-section-end-->
-
-<section class="main-section client-part" id="client"><!--main-section client-part-start-->
-	<div class="container">
-		<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
-    	<div class="row">
-        	<div class="col-lg-12">
-            	<p class="client-part-haead wow fadeInDown delay-05">It was a pleasure to work with the guys at Knight Studio. They made sure 
-we were well fed and drunk all the time!</p>
-            </div>
-        </div>
-    	<ul class="client wow fadeIn delay-05s">
-        	<li><a href="#">
-            	<img src="img/client-pic1.jpg" alt="">
-                <h3>James Bond</h3>
-                <span>License To Drink Inc.</span>
-            </a></li>
-        </ul>
-    </div>
-</section><!--main-section client-part-end-->
 <div class="c-logo-part"><!--c-logo-part-start-->
 	<div class="container">
     	<ul>
-        	<li><a href="#"><img src="img/c-liogo1.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo5.png" alt=""></a></li>
+        	<!-- <li><a href="#" class="pt-3 pb-3"><img src="img/c-liogo1.png" alt=""></a></li> -->
+            <li><a href="#" class="pt-3 pb-3"><img src="img/c-liogo2.png" alt=""></a></li>
+            <li><a href="#" class="pt-3 pb-3"><img src="img/c-liogo3.png" alt=""></a></li>
+            <li><a href="#" class="pt-3 pb-3"><img src="img/c-liogo4.png" alt=""></a></li>
+            <!-- <li><a href="#" class="pt-3 pb-3"><img src="img/c-liogo5.png" alt=""></a></li> -->
     	</ul>
 	</div>
 </div><!--c-logo-part-end-->
 
-
-<!--main-section team-start-->
-<!-- <section class="main-section team" id="team">
-	<div class="container">
-        <h2>team</h2>
-        <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-        <div class="team-leader-block clearfix">
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic1.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-                <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader  wow fadeInDown delay-06s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic2.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-                <span class="wow fadeInDown delay-06s">Product Manager</span>
-                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic3.jpg" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-                <span class="wow fadeInDown delay-09s">Accountant</span>
-                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-            </div>
-        </div>
-    </div>
-</section> --><!--main-section team-end-->
-
-
-
 <section class="business-talking"><!--business-talking-start-->
 	<div class="container">
-        <h2>Let’s Talk Business.</h2>
+        <h2>I'll wait for your call.</h2>
     </div>
 </section><!--business-talking-end-->
-<div class="container">
-<section class="main-section contact" id="contact">
-	
-        <div class="row">
+<section id="Contact" class="main-section contact" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
-            	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Address:</h3>
-                	<span>Martinez Martelo, Tranversal 29 #20-39<br>Cartagena, Colombia.</span>
-                </div>
-                <div class="contact-info-box phone clearfix">
-                	<h3><i class="fa-phone"></i>Phone:</h3>
-                	<span>314-501-0127</span>
-                </div>
-                <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>email:</h3>
-                	<span>zonacreactiva@gmail.com</span>
-                </div>
-            	<div class="contact-info-box hours clearfix">
-                	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
-                </div>
+                <div class="contact-info-box hours clearfix">
+                    
+                	<h3>Address:</h3>
+                    <p class="mb-4">Martinez Martelo, Tranversal 29 #20-39<br>Cartagena, Colombia.</p>
+            	
+                	<h3></i>Phone:</h3>
+                    <p class="mb-4">301-397-7460</p>
+               
+                	<h3>email:</h3>
+                    <p class="mb-4">lavnovadesign@gmail.com</p>
+
                 <ul class="social-link">
-                	<li class="twitter"><a href="https://twitter.com/zonacreactiva?lang=es"><i class="fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/lavender.n.solano"><i class="fa-facebook"></i></a></li>
-                    <li class="pinterest"><a href="https://es.pinterest.com/lavendernova/"><i class="fa-pinterest"></i></a></li>
-                    <li class="gplus"><a href="https://plus.google.com/u/0/+lavendernova"><i class="fa-google-plus"></i></a></li>
-                    <li class="dribbble"><a href="https://www.behance.net/Lavender_Nova"><i class="fa-behance"></i></a></li>
+                	<li class="twitter"><a href="https://twitter.com/zonacreactiva?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/lavender.n.solano" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="pinterest"><a href="https://es.pinterest.com/lavendernova/" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    <li class="dribbble"><a href="https://www.behance.net/Lavender_Nova" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="behance"><a href="https://www.behance.net/Lavender_Nova" target="_blank"><i class="fab fa-behance"></i></a></li>
                 </ul>
-            </div>
-        	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-            	<div class="form">
-                	<input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                    <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                	<textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                    <input class="input-btn" type="submit" value="send message">
-                </div>	
+                </div>
+            	
             </div>
         </div>
+    </div>
 </section>
-</div>
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
@@ -609,127 +579,193 @@ we were well fed and drunk all the time!</p>
 </footer>
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                            <!-- Project Details Go Here -->
+                            <h2>Dealer Service Pro "STATS"</h2>
+                            <p class="item-intro text-muted">Administrative application with the state machine system created to manage the maintenance and sale of scooters.</p>
+                            <h4>Objectives</h4>
+                            <p>The main objective of this project was to order, simplify and give it a distinctive style, which will give it more personality and be more flexible when viewing it on any device.</p>
+                            </div>
+                            <div class="col-md-12">    
+                            <img class="img-responsive img-centered" src="img/portfolio/stats.jpg" alt="Images of aplication Dealer Service Pro">
+                            </div>
+                            <div class="col-md-8">    
+                            <h2>Thanks for your visit</h2>
+                            <p>As it is a private application, it is not possible to place links to this project.</p>
+                            <ul class="list-inline">
+                                <li>Date: January 2019</li>
+                                <li>Client: New Scooters 4 less</li>
+                                <li>Category: Progressive Web App</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+               <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/housegroup-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>Scoutz</h2>
+                            <p class="item-intro text-muted">Expanding the reach of scouting departments via a discovery platform for scoutz and athletes. Download now to become an area scout or to get evaluated objectively if you’re an athlete.</p>
+                            <h4>Objectives</h4>
+                            <p>The main objective of this project was to order, simplify and give it a distinctive style, which will give it more personality and be more flexible when viewing it on any device.</p>
+                            </div>
+                            <div class="col-md-12">    
+                            <img class="img-responsive img-centered" src="img/portfolio/scoutz.jpg" alt="Images of aplication Dealer Service Pro">
+                            </div>
+                            <div class="col-md-8">    
+                            <h2>Thanks for your visit</h2>
+                            <p>As it is a private application, it is not possible to place links to this project.</p>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2019</li>
+                                <li>Client: New Scooters 4 less</li>
+                                <li>Category: Progressive Web App</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </div>
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/summerhotel-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
+</div>
+
     <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                 <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/arismendyandrade-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>El indio</h2>
+                            <p class="item-intro text-muted">Fast food restaurant.</p>
+                            <h4>Objectives</h4>
+                            <p class="p-5">Capturing Mexican culture from the point of view of its food and the elements that make it up were the main points to create this ecommerce project, with the purpose of attracting the public in Florida and bringing Latinos closer to their culture, generating nostalgia and using this niche to be successful in sales.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/el-indio.jpg" alt="Ark Exit Companies Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <h3 class="mb-3">
+                                <strong>Visit the project</strong>
+                                and appreciate the final result <br>
+                                <strong>
+                                <a href="https://eatelindio.com" target="_blank">eatelindio.com.</a></strong></h3>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2019</li>
+                                <li>Client: Ark Exit</li>
+                                <li>Category: Web Design</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+  </div>
+</div>
     <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+    <div class="portfolio-modal modal fade" id="portfolioModal4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+                 <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Ark Exit Companies</h2>
+                            <p class="item-intro text-muted">Advice and management in the sale of companies.</p>
+                            <h4>Objectives</h4>
+                            <p class="p-5">Create a minimalist website focused on people over 50, with clear information and little distraction for reading.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/arkexitcompanies.jpg" alt="Ark Exit Companies Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <h3 class="mb-3">
+                                <strong>Visit the project</strong>
+                                and appreciate the final result <br>
+                                <strong>
+                                <a href="https://www.arkexitcompanies.com" target="_blank">www.arkexitcompanies.com</a></strong></h3>
+                            <ul class="list-inline">
+                                <li>Date: January 2019</li>
+                                <li>Client: Ark Exit</li>
+                                <li>Category: Web Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/jaimeorduzduran-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>Ark Exit Companies</h2>
+                            <p class="item-intro text-muted">Advice and management in the sale of companies.</p>
+                            <h4>Objectives</h4>
+                            <p class="p-5">Create a minimalist website focused on people over 50, with clear information and little distraction for reading.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/zambai.jpg" alt="Ark Exit Companies Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <h3 class="mb-3">
+                                <strong>Visit the project</strong>
+                                and appreciate the final result <br>
+                                <strong>
+                                <a href="https://zambaishack.com/" target="_blank">zambaishack.com</a></strong></h3>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2019</li>
+                                <li>Client: Ark Exit</li>
+                                <li>Category: Web Design</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -738,175 +774,163 @@ we were well fed and drunk all the time!</p>
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/ashoget-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+    <div class="portfolio-modal modal fade" id="portfolioModal6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                 <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escenario-indias-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>Ark Exit Companies</h2>
+                            <p class="item-intro text-muted">Advice and management in the sale of companies.</p>
+                            <h4>Objectives</h4>
+                            <p class="p-5">Create a minimalist website focused on people over 50, with clear information and little distraction for reading.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/vitalrx.jpg" alt="Ark Exit Companies Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <h3 class="mb-3">
+                                <strong>Visit the project</strong>
+                                and appreciate the final result <br>
+                                <strong>
+                                <a href="https://getvitalrx.com" target="_blank">getvitalrx.com</a></strong></h3>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: January 2019</li>
+                                <li>Client: Ark Exit</li>
+                                <li>Category: Web Design</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-     <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+  </div>
+</div>
+<!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                 <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/agua-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <h2>LAV HEALTH CARE</h2>
+                            <p class="item-intro text-muted">Design and prototype of a company template for a home care company.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/health.jpg" alt="Health Care Prototipe and Web Design">
+                            <h2>Thanks for your visit</h2>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: November 2020</li>
+                                <li>Client: Lavhealth Care</li>
+                                <li>Category: Web Design</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> <!-- Portfolio Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/lecoqtail-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- Portfolio Modal 9 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/kitesurf-detail.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
+</div>
+<!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+                 <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>OWD Health Care</h2>
+                            <p class="item-intro text-muted">Design and prototype of a company template for a home care company.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/health2.jpg" alt="Health Care Prototipe and Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <ul class="list-inline">
+                                <li>Date: December 2020</li>
+                                <li>Client: OWD Health Care</li>
+                                <li>Category: Web Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+                 <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>MMJ</h2>
+                            <p class="item-intro text-muted">Advice and management in the sale of companies.</p>
+                            <h4>Objectives</h4>
+                            <p class="p-5">Create a minimalist website focused on people over 50, with clear information and little distraction for reading.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mmj.jpg" alt="Ark Exit Companies Web Design">
+                            <h2>Thanks for your visit</h2>
+                            <h3 class="mb-3">
+                                <strong>Visit the project</strong>
+                                and appreciate the final result <br>
+                                <strong>
+                                <a href="https://https://mmjrecs.com/" target="_blank">mmjrecs.com</a></strong></h3>
+                            <ul class="list-inline">
+                                <li>Date: January 2019</li>
+                                <li>Client: Ark Exit</li>
+                                <li>Category: Web Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+ <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
-
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#test').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/classie.js"></script>
+<script src="https://kit.fontawesome.com/079b4bc464.js" crossorigin="anonymous"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    speedAsDuration: true,
+    easing: 'easeInCubic'
     });
 </script>
 
@@ -921,72 +945,21 @@ we were well fed and drunk all the time!</p>
  
   </script>
 
-
 <script type="text/javascript">
-	$(window).load(function(){
-		
-		$('.main-nav li a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 102
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script>
-
-<script type="text/javascript">
-
-$(window).load(function(){
-  
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
-
-  
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
-         });
-         return false;
+    $(".portfolio-item-wrapper").isotope({
+         itemSelector: '.single-portfolio-2',
+         layoutMode: 'fitRows'
     });
-  
-});
-
+    $(".portfolioFilter ul li a").click(function(){
+        $(".portfolioFilter ul li a").removeClass("current");
+        $(this).addClass("current");
+   
+    var selector = $(this).attr("data-filter");
+    $(".portfolio-item-wrapper").isotope({
+        filter: selector
+    })
+    return false
+}); 
 </script>
 </body>
 </html>
